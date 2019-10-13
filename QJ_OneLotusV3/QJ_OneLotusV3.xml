@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QJ_OneLotusV3</name>
+    </assembly>
+    <members>
+        <member name="T:QJ_OneLotusV3.Controllers.AuthController">
+            <summary>
+            系统基础框架接口
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.AuthController.Login(System.Object)">
+            <summary>
+            登录接口
+            </summary>
+            <param name="PostData">上传数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.AuthController.ExeAction(System.String,System.Object)">
+            <summary>
+            执行系统基础框架接口
+            </summary>
+            <param name="Action">操作Action</param>
+            <param name="PostData">参数Json数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.AuthController.IMPORTUSER(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入用户模板
+            </summary>
+            <param name="excelfile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.AuthController.EXPORTYG">
+            <summary>
+            导出员工数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QJ_OneLotusV3.Controllers.BllController">
+            <summary>
+            业务功能模块接口
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.BllController.ExeAction(System.String,System.Object)">
+            <summary>
+            执行业务接口
+            </summary>
+            <param name="Action"></param>
+            <param name="PostData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.BllController.PubExeAction(System.String,System.Object)">
+            <summary>
+            外部接口，不需要验证权限
+            </summary>
+            <param name="Action">执行接口</param>
+            <param name="PostData">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.BllController.EXPORTBDTJDATA">
+             <summary>
+            导出统计数据
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.BllController.EXPORTWORD">
+            <summary>
+            按照模板导出表单Word
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.BllController.IMPORTXZ(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入薪资单模板
+            </summary>
+            <param name="excelfile"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QJ_OneLotusV3.Controllers.FileController">
+            <summary>
+            上传下载文件相关接口
+            </summary>
+        </member>
+        <member name="F:QJ_OneLotusV3.Controllers.FileController.Result.success">
+            <summary>
+            表示图片是否已上传成功。
+            </summary>
+        </member>
+        <member name="F:QJ_OneLotusV3.Controllers.FileController.Result.msg">
+            <summary>
+            自定义的附加消息。
+            </summary>
+        </member>
+        <member name="F:QJ_OneLotusV3.Controllers.FileController.Result.sourceUrl">
+            <summary>
+            表示原始图片的保存地址。
+            </summary>
+        </member>
+        <member name="F:QJ_OneLotusV3.Controllers.FileController.Result.avatarUrls">
+            <summary>
+            表示所有头像图片的保存地址，该变量为一个数组。
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.FileController.UPTX(System.String)">
+            <summary>
+            上传头像
+            </summary>
+            <param name="strUserName">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.FileController.UPPIC">
+            <summary>
+            上传图片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.FileController.DFile(System.String)">
+            <summary>
+            文件下载
+            </summary>
+            <param name="fileID">文件ID</param>
+        </member>
+        <member name="T:QJ_OneLotusV3.Controllers.MobController">
+            <summary>
+            移动端接口
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.MobController.XXJS">
+            <summary>
+            执行业务接口
+            </summary>
+            <param name="Action"></param>
+            <param name="PostData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.MobController.GetUserCodeByCode">
+            <summary>
+            获取企业微信用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.MobController.WXINIT">
+            <summary>
+            初始化企业微信信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.MobController.AUTOALERT">
+            <summary>
+            提醒接口,每5秒执行一次
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.MobController.ISEXIST">
+            <summary>
+            放弃
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QJ_OneLotusV3.Controllers.UEditorController">
+            <summary>
+            百度编辑器相关接口
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.Controllers.UEditorController.Do">
+            <summary>
+            处理百度编辑器信息
+            </summary>
+        </member>
+        <member name="T:QJ_OneLotusV3.Appsettings">
+            <summary>
+            appsettings.json操作类
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.Appsettings.app(System.String[])">
+            <summary>
+            封装要操作的字符
+            </summary>
+            <param name="sections"></param>
+            <returns></returns>
+        </member>
+        <member name="P:QJ_OneLotusV3.NPOIMemoryStream.IsColse">
+            <summary>
+            获取流是否关闭
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.JwtHelper.CreateJWT(System.String,System.String)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.JwtHelper.SerializeJWT(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QJ_OneLotusV3.TokenModelJWT">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:QJ_OneLotusV3.TokenModelJWT.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:QJ_OneLotusV3.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:QJ_OneLotusV3.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="T:QJ_OneLotusV3.JwtTokenAuth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:QJ_OneLotusV3.JwtTokenAuth._next">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:QJ_OneLotusV3.JwtTokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:QJ_OneLotusV3.JwtTokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QJ_OneLotusV3.UploadHelp.CreateRandomCode(System.Int32)">
+            <summary>
+            生成指定长度的随机码。
+            </summary>
+        </member>
+    </members>
+</doc>

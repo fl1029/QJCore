@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="API\Base\BaseManage.cs" />
+    <Compile Remove="API\Class1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Senparc.Weixin.Work" Version="3.3.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QJY.Common\QJY.Common.csproj" />
+    <ProjectReference Include="..\QJY.Data\QJY.Data.csproj" />
+  </ItemGroup>
+
+</Project>
